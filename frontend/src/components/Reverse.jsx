@@ -1,40 +1,76 @@
+import {useState} from "react";
 import API from "../api/api";
 
 
 function Reverse(){
 
+const [event,setEvent]=useState("");
 
-const reverse=async()=>{
+
+const reverse = async()=>{
 
 
-let res = await API.post(
+console.log("Sending:",event);
+
+
+try{
+
+const response = await API.post(
 "/reverse/",
 {
-event_id:"EV001"
+event_id:event.trim()
 }
 );
 
 
-alert(JSON.stringify(res.data));
+alert(JSON.stringify(response.data));
+
+
+}
+catch(error){
+
+console.log(error.response);
+
+alert(JSON.stringify(error.response.data));
+
+}
 
 
 }
 
 
-return (
+return(
 
 <div>
 
-<h2>Reverse</h2>
+<h2>
+Reverse Event
+</h2>
+
+
+<input
+
+placeholder="Enter Event ID"
+
+value={event}
+
+onChange={
+e=>setEvent(e.target.value)
+}
+
+/>
+
 
 <button onClick={reverse}>
-Reverse Event
+Reverse
 </button>
 
 
 </div>
 
+
 )
+
 
 }
 
