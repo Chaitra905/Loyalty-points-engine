@@ -1,0 +1,21 @@
+{
+    "deposit":{
+        "base_points":10,
+        "multiplier":1,
+        "cap":100
+    },
+
+
+    "purchase":{
+        "base_points":5,
+        "multiplier":2,
+        "cap":50
+    },
+
+
+    "referral":{
+        "base_points":20,
+        "multiplier":1,
+        "cap":100
+    }
+}
