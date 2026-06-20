@@ -1,4 +1,4 @@
-# Loyalty Points Engine 🚀
+# Loyalty Points Engine 
 
 A full-stack event-driven loyalty points management system built to handle customer reward events, point calculation, redemption, and transaction reversal with idempotency support.
 
