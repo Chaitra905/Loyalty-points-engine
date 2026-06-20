@@ -2,7 +2,7 @@
 
 A full-stack event-driven loyalty points management system built to handle customer reward events, point calculation, redemption, and transaction reversal with idempotency support.
 
-This project was developed as a backend-focused assessment project with a React frontend dashboard and FastAPI REST API.
+This project was developed as a backend-focused assessment project with a React frontend dashboard and FastAPI.
 
 ---
 
